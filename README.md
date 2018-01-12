@@ -1,3 +1,0 @@
-# ionic-studies
-
-teste
