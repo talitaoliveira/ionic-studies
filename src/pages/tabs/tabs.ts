@@ -20,7 +20,7 @@ import { ResumoPage } from '../resumo/resumo';
 })
 export class TabsPage {
 
-  HomeRoot = HomePage
+  homeRoot = HomePage
   contaPagarRoot = ContapagarPage
   contaReceberRoot = ContareceberPage
   resumoRoot = ResumoPage

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the IntroPage page.
@@ -15,11 +16,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class IntroPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams
+  ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IntroPage');
+  }
+
+  goHome(){
+    this.navCtrl.push(TabsPage)
   }
 
 }
