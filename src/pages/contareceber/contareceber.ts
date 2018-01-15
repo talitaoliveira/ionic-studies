@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { ContaReceber } from '../../model/contareceber';
+
+
 /**
  * Generated class for the ContareceberPage page.
  *
@@ -15,7 +18,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ContareceberPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  contasreceber: ContaReceber[] = [
+    { id: 1,
+      description: 'Salário',
+      value: 500,
+      date: new Date(2018,1,18)
+    },
+    { id: 2,
+      description: 'Dinheiro emprestado de Fulano',
+      value: 20.5,
+      date: new Date(2018,1,15)
+    }
+  ]
+
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams
+  ) {
+
   }
 
   ionViewDidLoad() {

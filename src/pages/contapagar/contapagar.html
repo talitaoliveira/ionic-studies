@@ -14,5 +14,20 @@
 
 
 <ion-content padding>
-   
+
+  <ion-list>
+
+    <ion-item *ngFor="let contapagar of contaspagar">
+
+      <ion-card-header>
+        {{ contapagar.description }}
+      </ion-card-header>
+      <ion-card-content>
+          {{ contapagar.date | date: 'dd/MM/yyyy'}} - {{ contapagar.value | currency:'BRL' }}
+      </ion-card-content>
+
+    </ion-item>
+
+  </ion-list>
+
 </ion-content>
