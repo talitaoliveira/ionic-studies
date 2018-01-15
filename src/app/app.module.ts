@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ContapagarPage } from '../pages/contapagar/contapagar';
 import { ContareceberPage } from '../pages/contareceber/contareceber';
 import { ResumoPage } from '../pages/resumo/resumo';
+import { RegistrosProvider } from '../providers/registros/registros';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { ResumoPage } from '../pages/resumo/resumo';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RegistrosProvider
   ]
 })
 export class AppModule {}
